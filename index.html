@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🚩 Red Flag Radar</title>
+
+<!-- Google Font for catchy heading -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<div class="container">
+  <div class="header">
+    <h1 id="animatedHeading">🚩 Red Flag Radar</h1>
+    <p>Premium Relationship Behavior Dashboard</p>
+  </div>
+
+  <div class="card">
+    <textarea id="textInput" placeholder="Paste conversation text here..."></textarea>
+
+    <div class="traits">
+      <label><input type="checkbox"> Controlling</label>
+      <label><input type="checkbox"> Manipulative</label>
+      <label><input type="checkbox"> Anger Issues</label>
+      <label><input type="checkbox"> Jealousy</label>
+      <label><input type="checkbox"> Lack of Accountability</label>
+      <label><input type="checkbox"> Disrespectful</label>
+      <label><input type="checkbox"> Aggression</label>
+      <label><input type="checkbox"> Boundary Violations</label>
+    </div>
+
+    <button class="primary-btn" onclick="analyze()">Analyze</button>
+    <button class="secondary-btn" onclick="toggleQuiz()">🎮 Toxicity Quiz</button>
+    <button class="secondary-btn" onclick="formText('Red Flag Radar')">✨ Text Mode</button>
+
+    <div id="result"></div>
+
+    <div class="quiz-section" id="quiz">
+      <h3>5 Question Toxicity Test</h3>
+      <label><input type="checkbox" class="quiz"> Do they check your phone?</label>
+      <label><input type="checkbox" class="quiz"> Do they guilt trip you?</label>
+      <label><input type="checkbox" class="quiz"> Do they isolate you?</label>
+      <label><input type="checkbox" class="quiz"> Do they threaten emotionally?</label>
+      <label><input type="checkbox" class="quiz"> Do they ignore your boundaries?</label>
+      <button class="primary-btn" onclick="calculateQuiz()">Submit Quiz</button>
+      <div id="quizResult"></div>
+    </div>
+  </div>
+
+  <div class="footer">Premium Interactive UI ✨</div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
